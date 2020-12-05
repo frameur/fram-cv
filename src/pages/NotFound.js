@@ -8,7 +8,7 @@ const NotFound = () => {
               <h3>Désolé cette page n'exite pas !</h3>
               <NavLink exact to="/">
                   <i className="fas fa-home"></i>
-                  <span>Accueil</span>
+                  <span> Accueil</span>
               </NavLink>
 
           </div>
