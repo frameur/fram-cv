@@ -8,6 +8,7 @@
       border-radius: $borderRadius;
       position: relative;
       overflow: hidden;
+      
   
       &:after {
         content: '';
@@ -40,6 +41,7 @@
         }
         .pdf {
           a {
+           
             font-size: 1.5rem;
             background: $color-3;
             padding: 1rem 2rem;
