@@ -22,7 +22,7 @@ const Experience = () => {
             <div className="exp-2">
                 <h4>Formation Infographiste multimédia</h4>
                 <h5>2015-2017</h5>
-                <p>Création flyers, magasine etc</p>
+                <p>Création flyers, magasine etc, suite adobe</p>
             </div>
         </div>
     );

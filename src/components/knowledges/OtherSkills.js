@@ -9,13 +9,19 @@ const OtherSkills = () => {
                     <li><i className="fas fa-check-square"></i> Anglais Portugais</li>
                     <li><i className="fas fa-check-square"></i> Github</li>
                     <li><i className="fas fa-check-square"></i> MongoDb</li>
-                    <li><i className="fas fa-check-square"></i> MySql</li>   
+                    <li><i className="fas fa-check-square"></i> MySql</li>
+                       
                 </ul>
                 <ul>
                     <li><i className="fas fa-check-square"></i> Photoshop</li>
                     <li><i className="fas fa-check-square"></i> Indesign</li>
                     <li><i className="fas fa-check-square"></i> Illustrator</li>
-                    <li><i className="fas fa-check-square"></i> Blender</li>   
+                    <li><i className="fas fa-check-square"></i> After effect</li>  
+                     
+                </ul>
+                <ul>
+                    <li><i className="fas fa-check-square"></i> Blender</li> 
+                    <li><i className="fas fa-check-square"></i> 3dsmax</li>   
                 </ul>
                 
             </div>
