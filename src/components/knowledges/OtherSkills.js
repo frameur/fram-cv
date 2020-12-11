@@ -6,10 +6,10 @@ const OtherSkills = () => {
             <h3>Autres Compétences</h3>
             <div className="list">
                 <ul>
-                    <li><i className="fas fa-check-square"></i> Anglais scolaire</li>
+                    <li><i className="fas fa-check-square"></i> Anglais Portugais</li>
                     <li><i className="fas fa-check-square"></i> Github</li>
-                    <li><i className="fas fa-check-square"></i> SEO</li>
-                    <li><i className="fas fa-check-square"></i> Méthodes Agiles</li>   
+                    <li><i className="fas fa-check-square"></i> MongoDb</li>
+                    <li><i className="fas fa-check-square"></i> MySql</li>   
                 </ul>
                 <ul>
                     <li><i className="fas fa-check-square"></i> Photoshop</li>

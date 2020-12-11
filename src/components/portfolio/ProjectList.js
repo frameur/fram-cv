@@ -10,7 +10,9 @@ export default class ProjectList extends Component {
             {id: 2, value: "css"},
             {id: 3, value: "react"},
             {id: 4, value: "php"},
-            {id: 5, value: "bootstrap"}
+            {id: 5, value: "bootstrap"},
+            {id: 6, value: "database"},
+            {id:7, value: "wordpress"}
         ],
         selectedRadio: 'javascript'
     };
