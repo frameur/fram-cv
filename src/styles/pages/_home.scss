@@ -1,7 +1,7 @@
 .home {
 
     .homeContent {
-      background: linear-gradient(115deg, $color-1 50%, transparent 100%);
+      background: linear-gradient(100deg, $color-1 60%, transparent 100%);
       min-height: $minHeight;
       width: 100%;
       min-height: 500px;
@@ -17,7 +17,7 @@
         width: inherit;
         background: url('../../media/fram2.jpg') no-repeat center/cover;
         z-index: -1;
-        filter: brightness(30%);
+        filter: brightness(40%);
       }
   
       .content {
