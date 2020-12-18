@@ -216,22 +216,26 @@
     }
     .infosContent {
       width: 100% !important;
+      height: 100%;
     }
   }
 }
 @media (max-width: 520px){
   .radioDisplay {
     display: none !important;
+  
+    
   }
   .portfolioContent {
     grid-template-rows: 1fr !important;
 
     .project {
-      grid-template-rows: 30px 40px 80px 40px !important;
-      width: 98% !important;
+      grid-template-rows: 30px 40px 80px 100px !important;
+      width: 95% !important;
 
       img {
-        height: 100% !important;
+        height: 115px !important;
+        width: 230px;
       }
     }
   }
