@@ -1,9 +1,10 @@
 import React from 'react';
-import Navigation from '../components/Navigation';
+import Navigation from '../components/Navigation3';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 
 const Contact = () => {
     return (
+        
     <div className='contact'>
             <Navigation/>
         <div className='contactContent'>
