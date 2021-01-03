@@ -55,12 +55,16 @@ const Navigation = () => {
                 </li>
              </ul>
              <div className="signature">
-                 <p>François CV - 2020</p>
+             <p>François Copyright &copy; 2021</p>
              </div>
             </div>
         </div>
-
+    
     );
 };
+
+
+
+
 
 export default Navigation;
