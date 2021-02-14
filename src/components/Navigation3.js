@@ -1,12 +1,14 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
+
+
 const Navigation = () => {
     return (
        <div className="sidebar">
            <div className="id">
                <div className="idContent">
-                   <img src="./media/francois5.jpg" alt="profil-pic"/>
+                   <img src="./media/tetefram.png" alt="profil-pic"/>
                    <h3>François RAMOS</h3>
                </div>
            </div>
@@ -54,9 +56,13 @@ const Navigation = () => {
                     <a href="https://codepen.io/" target="blank" rel="noopener noreferrer"><i className="fab fa-codepen"></i></a>
                 </li>
              </ul>
+
              <div className="signature">
-                 <p>François CV - 2020</p>
+                 
+                 <p>François Copyright &copy; 2021</p>
              </div>
+
+             
             </div>
         </div>
 

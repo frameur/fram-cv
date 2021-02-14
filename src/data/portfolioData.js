@@ -40,7 +40,7 @@ export const portfolioData = [
     name: 'play music',
     languages: ['javascript','css', 'bootstrap'],
     languagesIcons: ['fab fa-js', 'fab fa-css3-alt', 'fab fa-bootstrap'],
-    source: 'https://frameur.github.io/musiqueplay/',
+    source: 'https://musiqueplay.netlify.app',
     info: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus laboriosam aut nihil? Possimus, id facilis dignissimos repudiandae modi dolorum ea accusantium, veritatis debitis odio eveniet quos incidunt eaque nemo eius perferendis consequatur? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus laboriosam aut nihil? Possimus, id facilis dignissimos repudiandae modi dolorum ea accusantium.',
     picture: './media/liveplay.png'
   },
