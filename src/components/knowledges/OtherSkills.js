@@ -6,7 +6,7 @@ const OtherSkills = () => {
             <h3>Autres Compétences</h3>
             <div className="list">
                 <ul>
-                    <li><i className="fas fa-check-square"></i> Anglais Portugais</li>
+                    
                     <li><i className="fas fa-check-square"></i> Github</li>
                     <li><i className="fas fa-check-square"></i> MongoDb</li>
                     <li><i className="fas fa-check-square"></i> MySql</li>
@@ -21,7 +21,8 @@ const OtherSkills = () => {
                 </ul>
                 <ul>
                     <li><i className="fas fa-check-square"></i> Blender</li> 
-                    <li><i className="fas fa-check-square"></i> 3dsmax</li>   
+                    <li><i className="fas fa-check-square"></i> 3dsmax</li> 
+                    <li><i className="fas fa-check-square"></i> Anglais Portugais</li>  
                 </ul>
                 
             </div>

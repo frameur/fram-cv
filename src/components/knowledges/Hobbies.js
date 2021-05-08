@@ -5,11 +5,11 @@ const Hobbies = () => {
         <div className="hobbies">
             <h3>Intérêts</h3>
             <ul>
-                <li className="hobby"><i className="fas fa-bicycle"></i><span>VTT</span></li>
-                <li className="hobby"><i className="fas fa-hiking"></i><span>Randonnées</span></li>
-                <li className="hobby"><i className="fas fa-seedling"></i><span>Permaculture</span></li>
-                <li className="hobby"><i className="fab fa-bitcoin"></i><span>Crypto-monnaies</span></li>
-                <li className="hobby"><i className="fas fa-rocket"></i><span>Espace</span></li>
+                <li className="hobby"><i className="fas fa-bicycle fa-spin"></i><span>VTT</span></li>
+                <li className="hobby"><i className="fas fa-paint-brush fa-spin"></i><span>Dessin</span></li>
+                <li className="hobby"><i className="fas fa-camera-retro fa-spin"></i><span>Photographie</span></li>
+                <li className="hobby"><i className="far fa-file-video fa-spin"></i><span>Cinéma</span></li>
+                <li className="hobby"><i className="fas fa-atom fa-spin"></i><span>Physique quantique</span></li>
             </ul>
         </div>
     );

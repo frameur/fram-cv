@@ -8,7 +8,7 @@ const Navigation = () => {
        <div className="sidebar">
            <div className="id">
                <div className="idContent">
-                   <img src="./media/tetefram.png" alt="profil-pic"/>
+                   <img src="./media/tetefrancois.jpg" alt="profil-pic"/>
                    <h3>François RAMOS</h3>
                </div>
            </div>
@@ -59,7 +59,7 @@ const Navigation = () => {
 
              <div className="signature">
                  
-                 <p>François Copyright &copy; 2021</p>
+                 <p>François Copyright © {new Date().getFullYear()} </p>
              </div>
 
              

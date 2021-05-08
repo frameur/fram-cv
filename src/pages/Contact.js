@@ -14,7 +14,7 @@ const Contact = () => {
                    <ul>
                        <li >
                            <i className="fas fa-map-marker-alt"></i>
-                           <span>Vendée</span>
+                           <span>19 Résidence des Nouettes 85170 BELLEVIGNY</span>
                        </li>
                        <li>
                            <i className="fas fa-mobile-alt"></i>

@@ -11,9 +11,9 @@ class Languages extends Component {
 
         ],
         frameworks: [
-            {id: 1, value: "React", xp:0.2},
-            {id: 2, value: "Bootstrap", xp:1.2},
-            {id: 3, value: "Sass", xp:0.2},
+            {id: 1, value: "Reactjs", xp:0.5},
+            {id: 2, value: "Vuejs", xp:0.3},
+            {id: 3, value: "Bootstrap", xp:0.8},
             {id: 4, value: "material UI", xp:0.2}
         ]
     }

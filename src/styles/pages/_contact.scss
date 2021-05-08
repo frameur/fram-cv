@@ -24,7 +24,7 @@
         height: 100%;
         position: absolute;
         background: url(../../media/map3.jpg) no-repeat center top/cover;
-        filter: contrast(50%);
+        filter: contrast(70%);
         
       }
       &:after {
@@ -39,7 +39,7 @@
     }
     .contactBox {
       grid-area: 2;
-      background:$color-5;
+      background:$color-1;
       opacity: 80%;
       margin: 0 auto;
       padding: 1rem 3rem;
@@ -61,7 +61,7 @@
           content: '';
           height: 1px;
           width: 50%;
-          background: $color-1;
+          background: $color-3;
           position: absolute;
           bottom: -25px;
           left: 50%;
@@ -87,7 +87,7 @@
         span {
           font-weight: 700;
           font-size: 1.4rem;
-          color: $black;
+          color: $color-4;
           position: absolute;
           transform: translateX(52px);
           background: transparent;
@@ -111,11 +111,15 @@
         text-align: center;
         width: 100%;
         justify-content: space-around;
+        
+        
+        
   
         a {
           width: 20%;
           font-size: 1.2rem;
-          background: $color-5;
+          background: $color-1;
+          color: $color-4;
           border-radius: $borderRadius;
           display: inline-block;
           padding: 0.7rem 0;
@@ -124,19 +128,24 @@
           transform-origin: center;
           transition: .2s ease;
           transition: scale .1s;
+          transform-style: preserve-3d;
+        
   
           &:hover {
-            background: $color-4;
+            background: transparent;
+            color: $white;
+            box-shadow: 10px 10px 10px  $black;
+            
           }
   
           i {
-            color: $color-1;
+            color: $color-6;
             margin-top: .3rem;
           }
         }
         //ANIMATION
         @mixin networkAnim($timeout) {
-          animation: pop 1s forwards;
+          animation: pop 2s forwards;
           animation-delay: $timeout;
   
         }
@@ -146,16 +155,16 @@
           }
         }
         a:nth-child(1) {
-          @include networkAnim(.4s);
+          @include networkAnim(.2s);
         }
         a:nth-child(2) {
-          @include networkAnim(.8s);
+          @include networkAnim(.6s);
         }
         a:nth-child(3) {
-          @include networkAnim(1.2s);
+          @include networkAnim(.8s);
         }
         a:nth-child(4) {
-          @include networkAnim(1.6s);
+          @include networkAnim(1.2s);
         }
       }
     }
