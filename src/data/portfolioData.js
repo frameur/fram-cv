@@ -2,8 +2,8 @@ export const portfolioData = [
   {
     id: 1,
     name: 'brewerbeer',
-    languages: ['javascript','css', 'database'],
-    languagesIcons: ['fab fa-js','fab fa-css3-alt', 'fa fa-database'],
+    languages: ['javascript','css', 'database', 'react', 'vuejs' ],
+    languagesIcons: ['fab fa-js','fab fa-css3-alt', 'fa fa-database', 'fab fa-react'],
     source: 'http://www.github.com',
     info: "Réalisation d'une application sur les brasseurs de biere en France. J'ai construis la Data des brasseurs. J'ai utilisé MySql pour la gestion de ma base de données. ",
     picture: './media/brewerbeer.png'
@@ -11,8 +11,8 @@ export const portfolioData = [
   {
     id: 2,
     name: 'cookinstock',
-    languages: ['javascript', 'css', 'database'],
-    languagesIcons: ['fab fa-js','fab fa-css3-alt', 'fa fa-database'],
+    languages: ['javascript', 'css', 'database', 'react'],
+    languagesIcons: ['fab fa-js','fab fa-css3-alt', 'fa fa-database', 'fab fa-react'],
     source: 'http://www.github.com',  
     info: "L'ojectif du projet était de faire une application sous la forme d'un carnet de cuisine. Pour la base de données j'ai utilisé MongoDb. ",
     picture: './media/cookinstock.png'
@@ -29,8 +29,8 @@ export const portfolioData = [
   {
     id: 4,
     name: 'hans hartung',
-    languages: ['javascript','php','react'],
-    languagesIcons: ['fab fa-js','fab fa-php','fab fa-react'],
+    languages: ['css','react'],
+    languagesIcons: ['fab fa-js','fab fa-css3-alt','fab fa-react'],
     source: 'https://frameur.github.io/projetone/',
     info: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus laboriosam aut nihil? Possimus, id facilis dignissimos repudiandae modi dolorum ea accusantium, veritatis debitis odio eveniet quos incidunt eaque nemo eius perferendis consequatur? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus laboriosam aut nihil? Possimus, id facilis dignissimos repudiandae modi dolorum ea accusantium.',
     picture: './media/hanshartung.png'
@@ -38,7 +38,7 @@ export const portfolioData = [
   {
     id: 5,
     name: 'play music',
-    languages: ['javascript','css', 'bootstrap'],
+    languages: ['javascript','css'],
     languagesIcons: ['fab fa-js', 'fab fa-css3-alt', 'fab fa-bootstrap'],
     source: 'https://musiqueplay.netlify.app',
     info: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus laboriosam aut nihil? Possimus, id facilis dignissimos repudiandae modi dolorum ea accusantium, veritatis debitis odio eveniet quos incidunt eaque nemo eius perferendis consequatur? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus laboriosam aut nihil? Possimus, id facilis dignissimos repudiandae modi dolorum ea accusantium.',
@@ -47,8 +47,8 @@ export const portfolioData = [
   {
     id: 6,
     name: 'jeu snake ai',
-    languages: ['javascript','react', 'css'],
-    languagesIcons: ['fab fa-js','fab fa-react','fab fa-css3-alt'],
+    languages: ['javascript', 'css'],
+    languagesIcons: ['fab fa-js','fab fa-css3-alt'],
     source: 'https://jkerdaffret.github.io/machinelearningsnake/',
     info: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus laboriosam aut nihil? Possimus, id facilis dignissimos repudiandae modi dolorum ea accusantium, veritatis debitis odio eveniet quos incidunt eaque nemo eius perferendis consequatur? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus laboriosam aut nihil? Possimus, id facilis dignissimos repudiandae modi dolorum ea accusantium.',
     picture: './media/aisnake.png'
@@ -56,25 +56,25 @@ export const portfolioData = [
   {
     id: 7,
     name: 'site de thé',
-    languages: ['bootstrap', 'css'],
+    languages: [],
     languagesIcons: ['fab fa-bootstrap','fab fa-css3-alt'],
     source: 'https://frameur.github.io/bootstrapsitethe/',
     info: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus laboriosam aut nihil? Possimus, id facilis dignissimos repudiandae modi dolorum ea accusantium, veritatis debitis odio eveniet quos incidunt eaque nemo eius perferendis consequatur? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus laboriosam aut nihil? Possimus, id facilis dignissimos repudiandae modi dolorum ea accusantium.',
-    picture: './media/thebootstrap.png'
+    picture: ''
   },
   {
     id: 8,
     name: 'site restaurant',
-    languages: ['wordpress', 'css'],
+    languages: [],
     languagesIcons: ['fab fa-wordpress','fab fa-css3-alt'],
     source: 'https://jkerdaffret.github.io/machinelearningsnake/',
     info: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus laboriosam aut nihil? Possimus, id facilis dignissimos repudiandae modi dolorum ea accusantium, veritatis debitis odio eveniet quos incidunt eaque nemo eius perferendis consequatur? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus laboriosam aut nihil? Possimus, id facilis dignissimos repudiandae modi dolorum ea accusantium.',
-    picture: './media/imprezaresto.png'
+    picture: ''
   },
   {
     id: 9,
     name: 'e.commerce',
-    languages: ['wordpress', 'css'],
+    languages: [],
     languagesIcons: ['fab fa-wordpress','fab fa-css3-alt'],
     source: 'https://jkerdaffret.github.io/machinelearningsnake/',
     info: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus laboriosam aut nihil? Possimus, id facilis dignissimos repudiandae modi dolorum ea accusantium, veritatis debitis odio eveniet quos incidunt eaque nemo eius perferendis consequatur? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus laboriosam aut nihil? Possimus, id facilis dignissimos repudiandae modi dolorum ea accusantium.',
