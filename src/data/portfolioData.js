@@ -55,26 +55,26 @@ export const portfolioData = [
   },
   {
     id: 7,
-    name: 'site de thé',
-    languages: [],
-    languagesIcons: ['fab fa-bootstrap','fab fa-css3-alt'],
+    name: 'projet logo',
+    languages: ['other'],
+    languagesIcons: ['fab fa-adobe'],
     source: 'https://frameur.github.io/bootstrapsitethe/',
     info: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus laboriosam aut nihil? Possimus, id facilis dignissimos repudiandae modi dolorum ea accusantium, veritatis debitis odio eveniet quos incidunt eaque nemo eius perferendis consequatur? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus laboriosam aut nihil? Possimus, id facilis dignissimos repudiandae modi dolorum ea accusantium.',
-    picture: ''
+    picture: './media/bestselling.png'
   },
   {
     id: 8,
-    name: 'site restaurant',
-    languages: [],
-    languagesIcons: ['fab fa-wordpress','fab fa-css3-alt'],
+    name: 'projet photo',
+    languages: ['other'],
+    languagesIcons: ['fab fa-adobe'],
     source: 'https://jkerdaffret.github.io/machinelearningsnake/',
     info: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus laboriosam aut nihil? Possimus, id facilis dignissimos repudiandae modi dolorum ea accusantium, veritatis debitis odio eveniet quos incidunt eaque nemo eius perferendis consequatur? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus laboriosam aut nihil? Possimus, id facilis dignissimos repudiandae modi dolorum ea accusantium.',
-    picture: ''
+    picture: './media/thebootstrap.png'
   },
   {
     id: 9,
     name: 'e.commerce',
-    languages: [],
+    languages: ['wordpress'],
     languagesIcons: ['fab fa-wordpress','fab fa-css3-alt'],
     source: 'https://jkerdaffret.github.io/machinelearningsnake/',
     info: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus laboriosam aut nihil? Possimus, id facilis dignissimos repudiandae modi dolorum ea accusantium, veritatis debitis odio eveniet quos incidunt eaque nemo eius perferendis consequatur? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus laboriosam aut nihil? Possimus, id facilis dignissimos repudiandae modi dolorum ea accusantium.',
