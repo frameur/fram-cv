@@ -14,10 +14,11 @@ const Contact = () => {
                    <ul>
                        <li >
                            <i className="fas fa-map-marker-alt"></i>
-                           <span>19 Résidence des Nouettes 85170 BELLEVIGNY</span>
+                           <span>19 Résidence des Nouettes</span>
+                           <span>85170 BELLEVIGNY</span>
                        </li>
                        <li>
-                           <i className="fas fa-mobile-alt"></i>
+                           <i className="fas fa-mobile-alt"></i> 
                            <CopyToClipboard text="0642844284">
                                <span className="clickInput" onClick={() => { alert('Téléphone copié !');}}>07 86 88 73 44</span>
                            </CopyToClipboard>
