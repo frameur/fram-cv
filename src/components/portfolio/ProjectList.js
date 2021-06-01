@@ -8,8 +8,8 @@ export default class ProjectList extends Component {
         radios: [
             {id: 1, value: "javascript"},
             {id: 2, value: "css"},
-            {id: 3, value: "react"},
-            {id:4, value: "gatsby"},
+            {id: 3, value: "reactjs"},
+            {id:4, value: "vuejs"},
             {id: 5, value: "database"},
             {id:6, value: "wordpress"},
             {id:7, value: "other"}
