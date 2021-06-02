@@ -6,15 +6,15 @@ export default class ProjectList extends Component {
     state = {
         projects:portfolioData,
         radios: [
-            {id: 2, value: "javascript"},
             {id: 1, value: "css"},
+            {id: 2, value: "javascript"},
             {id: 3, value: "reactjs"},
             {id:4, value: "vuejs"},
             {id: 5, value: "database"},
             {id:6, value: "wordpress"},
             {id:7, value: "other"}
         ],
-        selectedRadio: 'javascript'
+        selectedRadio: 'css'
     };
     handleRadio = (event) => {
         let radio = event.target.value;
