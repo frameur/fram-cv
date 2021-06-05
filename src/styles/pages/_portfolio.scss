@@ -227,9 +227,19 @@
 }
 @media (max-width: 520px){
   .radioDisplay {
-    display: none !important;
-  
+   display: none !important;
     
+  }
+  .radioDisplay li{
+    width: 30px;
+    
+  }
+  .radioDisplay li label{
+    font-size: 9px;
+    
+  }
+  input[type="radio"]{
+    display: none;
   }
   .portfolioContent {
     grid-template-rows: 1fr !important;

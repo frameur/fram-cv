@@ -2,8 +2,8 @@ export const portfolioData = [
   {
     id: 1,
     name: 'brewerbeer',
-    languages: ['javascript','css', 'database', 'reactjs', 'vuejs'],
-    languagesIcons: ['fab fa-js','fab fa-css3-alt', 'fa fa-database', 'fab fa-react', 'fab fa-bootstrap', 'fab fa-vuejs' ],
+    languages: ['javascript','css', 'database','vuejs'],
+    languagesIcons: ['fab fa-js','fab fa-css3-alt', 'fa fa-database', 'fab fa-bootstrap', 'fab fa-vuejs' ],
     source: 'http://www.github.com',
     info: "Réalisation d'une application sur les brasseurs de biere en France. J'ai construis la Data des brasseurs. J'ai utilisé MySql pour la gestion de ma base de données. ",
     picture: './media/brewerbeer.png'
@@ -46,12 +46,12 @@ export const portfolioData = [
   },
   {
     id: 6,
-    name: 'jeu snake ai',
-    languages: ['javascript', 'css'],
+    name: '',
+    languages: [],
     languagesIcons: ['fab fa-js','fab fa-css3-alt'],
-    source: 'https://jkerdaffret.github.io/machinelearningsnake/',
+    source: '',
     info: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus laboriosam aut nihil? Possimus, id facilis dignissimos repudiandae modi dolorum ea accusantium, veritatis debitis odio eveniet quos incidunt eaque nemo eius perferendis consequatur? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus laboriosam aut nihil? Possimus, id facilis dignissimos repudiandae modi dolorum ea accusantium.',
-    picture: './media/aisnake.png'
+    picture: './media/'
   },
   {
     id: 7,
@@ -73,12 +73,12 @@ export const portfolioData = [
   },
   {
     id: 9,
-    name: 'e.commerce',
-    languages: ['wordpress'],
-    languagesIcons: ['fab fa-wordpress','fab fa-css3-alt'],
-    source: 'https://jkerdaffret.github.io/machinelearningsnake/',
+    name: 'ma todo-list',
+    languages: ['javascript', 'css', 'vuejs'],
+    languagesIcons: ['fab fa-js','fab fa-css3-alt', 'fab fa-vuejs'],
+    source: 'https://todoframvuejs.netlify.app/',
     info: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus laboriosam aut nihil? Possimus, id facilis dignissimos repudiandae modi dolorum ea accusantium, veritatis debitis odio eveniet quos incidunt eaque nemo eius perferendis consequatur? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus laboriosam aut nihil? Possimus, id facilis dignissimos repudiandae modi dolorum ea accusantium.',
-    picture: './media/bestselling.png'
+    picture: './media/todo-list.png'
   },
   
 ]
