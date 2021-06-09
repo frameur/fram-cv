@@ -55,7 +55,7 @@ export const portfolioData = [
   },
   {
     id: 7,
-    name: 'projet portfolio gatsby',
+    name: 'projet gatsby',
     languages: ['javascript', 'css', 'react'],
     languagesIcons: ['fab fa-js','fab fa-css3-alt','fab fa-react'],
     source: 'https://portfolioframgatsby.netlify.app/',
