@@ -55,12 +55,12 @@ export const portfolioData = [
   },
   {
     id: 7,
-    name: 'projet logo',
-    languages: ['other'],
-    languagesIcons: ['fab fa-adobe'],
-    source: 'https://frameur.github.io/bootstrapsitethe/',
+    name: 'projet portfolio gatsby',
+    languages: ['javascript', 'css', 'react'],
+    languagesIcons: ['fab fa-js','fab fa-css3-alt','fab fa-react'],
+    source: 'https://portfolioframgatsby.netlify.app/',
     info: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus laboriosam aut nihil? Possimus, id facilis dignissimos repudiandae modi dolorum ea accusantium, veritatis debitis odio eveniet quos incidunt eaque nemo eius perferendis consequatur? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus laboriosam aut nihil? Possimus, id facilis dignissimos repudiandae modi dolorum ea accusantium.',
-    picture: './media/bestselling.png'
+    picture: './media/gatsbyport.png'
   },
   {
     id: 8,
