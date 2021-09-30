@@ -6,8 +6,8 @@ export default class ProjectList extends Component {
   state = {
     projects: portfolioData,
     radios: [
-      { id: 1, value: "css" },
-      { id: 2, value: "javascript" },
+      { id: 1, value: "javascript" },
+      { id: 2, value: "css" },
       { id: 3, value: "reactjs" },
       { id: 4, value: "vuejs" },
       { id: 5, value: "database" },
