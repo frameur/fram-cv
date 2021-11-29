@@ -26,7 +26,7 @@ export const portfolioData = [
     ],
     source: "http://www.github.com",
     info: "L'ojectif du projet était de faire une application contenant des recettes de cuisine at ainsi que divers autre sujet. Pour la base de données j'ai utilisé MongoDb. ",
-    picture: "./media/mevn-recipes-other",
+    picture: "./media/mevn-recipes-other.png",
   },
   {
     id: 3,
