@@ -2,7 +2,7 @@ export const portfolioData = [
   {
     id: 1,
     name: "brewerbeer",
-    languages: ["javascript", "css", "database", "vuejs"],
+    languages: ["javascript", "css", "database", "reactjs"],
     languagesIcons: [
       "fab fa-js",
       "fab fa-css3-alt",
@@ -49,7 +49,7 @@ export const portfolioData = [
   {
     id: 5,
     name: "React play vitrine",
-    languages: ["javascript", "css"],
+    languages: ["javascript", "css", "reactjs"],
     languagesIcons: [
       "fab fa-js",
       "fab fa-css3-alt",
@@ -72,7 +72,7 @@ export const portfolioData = [
   {
     id: 7,
     name: "portfolio gatsby",
-    languages: ["javascript", "css", "react"],
+    languages: ["javascript", "css", "reactjs"],
     languagesIcons: ["fab fa-js", "fab fa-css3-alt", "fab fa-react"],
     source: "https://portfolioframgatsby.netlify.app/",
     info: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus laboriosam aut nihil? Possimus, id facilis dignissimos repudiandae modi dolorum ea accusantium, veritatis debitis odio eveniet quos incidunt eaque nemo eius perferendis consequatur? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus laboriosam aut nihil? Possimus, id facilis dignissimos repudiandae modi dolorum ea accusantium.",
