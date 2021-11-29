@@ -48,10 +48,15 @@ export const portfolioData = [
   },
   {
     id: 5,
-    name: "play music",
+    name: "React play vitrine",
     languages: ["javascript", "css"],
-    languagesIcons: ["fab fa-js", "fab fa-css3-alt", "fab fa-bootstrap"],
-    source: "https://musiqueplay.netlify.app",
+    languagesIcons: [
+      "fab fa-js",
+      "fab fa-css3-alt",
+      "fab fa-sass",
+      "fab fa-react",
+    ],
+    source: "https://play-vitrine.netlify.app",
     info: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus laboriosam aut nihil? Possimus, id facilis dignissimos repudiandae modi dolorum ea accusantium, veritatis debitis odio eveniet quos incidunt eaque nemo eius perferendis consequatur? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus laboriosam aut nihil? Possimus, id facilis dignissimos repudiandae modi dolorum ea accusantium.",
     picture: "./media/liveplay.png",
   },
