@@ -17,16 +17,16 @@ export const portfolioData = [
   {
     id: 2,
     name: "cookinstock",
-    languages: ["javascript", "css", "database", "reactjs"],
+    languages: ["javascript", "css", "database", "vuejs"],
     languagesIcons: [
       "fab fa-js",
       "fab fa-css3-alt",
       "fa fa-database",
-      "fab fa-react",
+      "fab fa-vuejs",
     ],
     source: "http://www.github.com",
-    info: "L'ojectif du projet était de faire une application sous la forme d'un carnet de cuisine. Pour la base de données j'ai utilisé MongoDb. ",
-    picture: "./media/cookinstock.png",
+    info: "L'ojectif du projet était de faire une application contenant des recettes de cuisine at ainsi que divers autre sujet. Pour la base de données j'ai utilisé MongoDb. ",
+    picture: "./media/mevn-recipes-other",
   },
   {
     id: 3,
