@@ -16,7 +16,7 @@ export const portfolioData = [
   },
   {
     id: 2,
-    name: "cookinstock",
+    name: "mevn full stack",
     languages: ["javascript", "css", "database", "vuejs"],
     languagesIcons: [
       "fab fa-js",
