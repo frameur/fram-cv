@@ -1,7 +1,7 @@
 export const portfolioData = [
   {
     id: 1,
-    name: "brewerbeer",
+    name: "Brewerbeer",
     languages: ["javascript", "css", "database", "reactjs"],
     languagesIcons: [
       "fab fa-js",
@@ -16,7 +16,7 @@ export const portfolioData = [
   },
   {
     id: 2,
-    name: "mevn full stack",
+    name: "Mevn full stack",
     languages: ["javascript", "css", "database", "vuejs"],
     languagesIcons: [
       "fab fa-js",
@@ -30,7 +30,7 @@ export const portfolioData = [
   },
   {
     id: 3,
-    name: "monty python",
+    name: "Monty python",
     languages: ["javascript", "css"],
     languagesIcons: ["fab fa-js", "fab fa-css3-alt"],
     source: "https://projetmonty.netlify.app/",
@@ -39,7 +39,7 @@ export const portfolioData = [
   },
   {
     id: 4,
-    name: "hans hartung",
+    name: "Hans Hartung",
     languages: ["css", "reactjs"],
     languagesIcons: ["fab fa-js", "fab fa-css3-alt", "fab fa-react"],
     source: "https://frameur.github.io/projetone/",
@@ -71,7 +71,7 @@ export const portfolioData = [
   },
   {
     id: 7,
-    name: "portfolio gatsby",
+    name: "Portfolio gatsby",
     languages: ["javascript", "css", "reactjs"],
     languagesIcons: ["fab fa-js", "fab fa-css3-alt", "fab fa-react"],
     source: "https://portfolioframgatsby.netlify.app/",
@@ -80,16 +80,21 @@ export const portfolioData = [
   },
   {
     id: 8,
-    name: "projet photo",
-    languages: ["other"],
-    languagesIcons: ["fab fa-adobe"],
-    source: "https://jkerdaffret.github.io/machinelearningsnake/",
+    name: "React api restcountries",
+    languages: ["javascript", "css", "reactjs"],
+    languagesIcons: [
+      "fab fa-js",
+      "fab fa-css3-alt",
+      "fab fa-sass",
+      "fab fa-react",
+    ],
+    source: "https://react-api-restcountries.netlify.app/",
     info: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus laboriosam aut nihil? Possimus, id facilis dignissimos repudiandae modi dolorum ea accusantium, veritatis debitis odio eveniet quos incidunt eaque nemo eius perferendis consequatur? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus laboriosam aut nihil? Possimus, id facilis dignissimos repudiandae modi dolorum ea accusantium.",
-    picture: "./media/thebootstrap.png",
+    picture: "./media/reactcountries.png",
   },
   {
     id: 9,
-    name: "ma todo-list",
+    name: "Liste de courses vuejs",
     languages: ["javascript", "css", "vuejs"],
     languagesIcons: ["fab fa-js", "fab fa-css3-alt", "fab fa-vuejs"],
     source: "https://todoframvuejs.netlify.app/",
