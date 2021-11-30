@@ -16,7 +16,7 @@ export const portfolioData = [
   },
   {
     id: 2,
-    name: "Mevn full stack",
+    name: "Mevn full",
     languages: ["javascript", "css", "database", "vuejs"],
     languagesIcons: [
       "fab fa-js",
@@ -48,7 +48,7 @@ export const portfolioData = [
   },
   {
     id: 5,
-    name: "React play vitrine",
+    name: "React vitrine",
     languages: ["javascript", "css", "reactjs"],
     languagesIcons: [
       "fab fa-js",
@@ -62,7 +62,7 @@ export const portfolioData = [
   },
   {
     id: 6,
-    name: "Mini projet Gatsby",
+    name: "Projet Gatsby",
     languages: ["javascript", "css", "reactjs"],
     languagesIcons: ["fab fa-js", "fab fa-css3-alt", "fab fa-react"],
     source: "https://gatsbypagination.netlify.app/",
@@ -80,7 +80,7 @@ export const portfolioData = [
   },
   {
     id: 8,
-    name: "React api restcountries",
+    name: "React restcountries",
     languages: ["javascript", "css", "reactjs"],
     languagesIcons: [
       "fab fa-js",
@@ -94,7 +94,7 @@ export const portfolioData = [
   },
   {
     id: 9,
-    name: "Liste de courses vuejs",
+    name: "Todos vuejs",
     languages: ["javascript", "css", "vuejs"],
     languagesIcons: ["fab fa-js", "fab fa-css3-alt", "fab fa-vuejs"],
     source: "https://todoframvuejs.netlify.app/",
