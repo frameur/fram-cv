@@ -24,7 +24,7 @@ export const portfolioData = [
       "fa fa-database",
       "fab fa-vuejs",
     ],
-    source: "https://nameless-atoll-87553.herokuapp.com/",
+    source: "https://mevnfull.herokuapp.com/",
     info: "L'ojectif du projet était de faire une application contenant des recettes de cuisine at ainsi que divers autre sujet. Pour la base de données j'ai utilisé MongoDb. ",
     picture: "./media/mevn-recipes-other.png",
   },
