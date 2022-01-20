@@ -11,7 +11,7 @@ export const portfolioData = [
       "fab fa-react",
     ],
     source: "http://www.github.com",
-    info: "Réalisation d'une application sur les brasseurs de biere en France. J'ai construis la Data des brasseurs. J'ai utilisé MySql pour la gestion de ma base de données. ",
+    info: "Projet en cours de modification. ",
     picture: "./media/brewerbeer.png",
   },
   {
@@ -25,7 +25,7 @@ export const portfolioData = [
       "fab fa-vuejs",
     ],
     source: "https://mevnfull.herokuapp.com/",
-    info: "L'ojectif du projet était de faire une application contenant des recettes de cuisine at ainsi que divers autre sujet. Pour la base de données j'ai utilisé MongoDb. ",
+    info: "Pour le frontend : VUEJS, le backend : NODEJS, gestion base de donnée : MONGODB.  ",
     picture: "./media/mevn-recipes-other.png",
   },
   {
@@ -34,16 +34,16 @@ export const portfolioData = [
     languages: ["javascript", "css"],
     languagesIcons: ["fab fa-js", "fab fa-css3-alt"],
     source: "https://projetmonty.netlify.app/",
-    info: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus laboriosam aut nihil? Possimus, id facilis dignissimos repudiandae modi dolorum ea accusantium, veritatis debitis odio eveniet quos incidunt eaque nemo eius perferendis consequatur? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus laboriosam aut nihil? Possimus, id facilis dignissimos repudiandae modi dolorum ea accusantium.",
+    info: "Fan des Monty python, donc un projet plutôt autour de la dérision. Pour l'instant création simple HTML, CSS, JAVASCRIPT le projet evolue autour de REACTJS.",
     picture: "./media/montypython.png",
   },
   {
     id: 4,
     name: "Hans Hartung",
-    languages: ["css", "reactjs"],
+    languages: ["css"],
     languagesIcons: ["fab fa-js", "fab fa-css3-alt", "fab fa-react"],
     source: "https://frameur.github.io/projetone/",
-    info: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus laboriosam aut nihil? Possimus, id facilis dignissimos repudiandae modi dolorum ea accusantium, veritatis debitis odio eveniet quos incidunt eaque nemo eius perferendis consequatur? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus laboriosam aut nihil? Possimus, id facilis dignissimos repudiandae modi dolorum ea accusantium.",
+    info: "J'ai découvert Hans Hartung lors de mes cours de dessin.",
     picture: "./media/hanshartung.png",
   },
   {
@@ -57,7 +57,7 @@ export const portfolioData = [
       "fab fa-react",
     ],
     source: "https://play-vitrine.netlify.app",
-    info: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus laboriosam aut nihil? Possimus, id facilis dignissimos repudiandae modi dolorum ea accusantium, veritatis debitis odio eveniet quos incidunt eaque nemo eius perferendis consequatur? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus laboriosam aut nihil? Possimus, id facilis dignissimos repudiandae modi dolorum ea accusantium.",
+    info: "Projet REACTJS, .",
     picture: "./media/liveplay.png",
   },
   {
@@ -75,7 +75,7 @@ export const portfolioData = [
     languages: ["javascript", "css", "reactjs"],
     languagesIcons: ["fab fa-js", "fab fa-css3-alt", "fab fa-react"],
     source: "https://portfolioframgatsby.netlify.app/",
-    info: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus laboriosam aut nihil? Possimus, id facilis dignissimos repudiandae modi dolorum ea accusantium, veritatis debitis odio eveniet quos incidunt eaque nemo eius perferendis consequatur? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus laboriosam aut nihil? Possimus, id facilis dignissimos repudiandae modi dolorum ea accusantium.",
+    info: "Projet pour presenter mes projets design realisé avec la suite Adobe, suite Affinty et sketchbook .",
     picture: "./media/gatsbyportfolio2.png",
   },
   {
@@ -89,7 +89,7 @@ export const portfolioData = [
       "fab fa-react",
     ],
     source: "https://react-api-restcountries.netlify.app/",
-    info: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus laboriosam aut nihil? Possimus, id facilis dignissimos repudiandae modi dolorum ea accusantium, veritatis debitis odio eveniet quos incidunt eaque nemo eius perferendis consequatur? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus laboriosam aut nihil? Possimus, id facilis dignissimos repudiandae modi dolorum ea accusantium.",
+    info: "API countries avec REACTJS avec le module AXIOS.",
     picture: "./media/reactcountries.png",
   },
   {
@@ -98,7 +98,7 @@ export const portfolioData = [
     languages: ["javascript", "css", "vuejs"],
     languagesIcons: ["fab fa-js", "fab fa-css3-alt", "fab fa-vuejs"],
     source: "https://todoframvuejs.netlify.app/",
-    info: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus laboriosam aut nihil? Possimus, id facilis dignissimos repudiandae modi dolorum ea accusantium, veritatis debitis odio eveniet quos incidunt eaque nemo eius perferendis consequatur? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus laboriosam aut nihil? Possimus, id facilis dignissimos repudiandae modi dolorum ea accusantium.",
+    info: "Petit projet classique, faire sa liste de course avec VUEJS.",
     picture: "./media/todo-list.png",
   },
 ];

@@ -12,7 +12,6 @@ export default class ProjectList extends Component {
       { id: 4, value: "vuejs" },
       { id: 5, value: "database" },
       { id: 6, value: "wordpress" },
-      { id: 7, value: "other" },
     ],
     selectedRadio: "javascript",
   };
