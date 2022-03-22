@@ -5,7 +5,7 @@
     min-height: $minHeight;
     grid-template-columns: 1fr;
     grid-template-rows: 50px 1fr;
-    grid-template-areas: 
+    grid-template-areas:
       "1"
       "2";
   }
@@ -30,31 +30,31 @@
       z-index: 2;
       @include verticalCenter;
 
-      input[type="radio"]{
+      input[type="radio"] {
         visibility: hidden;
         position: relative;
 
         &:before {
-          content:'';
+          content: "";
           visibility: visible;
           position: absolute;
           top: -4px;
           left: -12px;
-          height: .9rem;
-          width: .9rem;
+          height: 0.9rem;
+          width: 0.9rem;
           border-radius: 50%;
           border: 2px solid $color-4;
           cursor: pointer;
           transition: 0.3s;
         }
         &:after {
-          content:'';
+          content: "";
           visibility: visible;
           position: absolute;
           top: -4px;
-          left: -12px; 
-          height: .9rem;
-          width: .9rem;
+          left: -12px;
+          height: 0.9rem;
+          width: 0.9rem;
           border-radius: 50%;
           cursor: pointer;
           transition: 0.3s;
@@ -89,11 +89,11 @@
       text-align: center;
       width: 32%;
       max-height: 50%;
-      padding: .3rem;
+      padding: 0.3rem;
       box-shadow: $shadow;
       display: grid;
       grid-template-rows: 15% 15% 55% 15%;
-      grid-template-areas: 
+      grid-template-areas:
         "1"
         "2"
         "3"
@@ -107,7 +107,7 @@
 
       i {
         font-size: 1.4rem;
-        padding: 0 .35rem;
+        padding: 0 0.35rem;
         color: $color-4;
         text-shadow: 0 0px 1px $color-1;
       }
@@ -119,7 +119,6 @@
       @include verticalCenter;
       justify-content: left;
       color: $color-4;
-
     }
     img {
       grid-area: 3;
@@ -138,7 +137,7 @@
       cursor: pointer;
       font-size: 1.5rem;
       @include verticalCenter;
-      transition: .2s;
+      transition: 0.2s;
 
       &:hover {
         transform: scale(1.1);
@@ -151,7 +150,7 @@
       bottom: 0;
       right: 0;
       background: rgba(0, 0, 0, 0.507);
-      animation: popup .3s ease forwards ;
+      animation: popup 0.3s ease forwards;
       transform-origin: center;
 
       .infosContent {
@@ -164,14 +163,14 @@
         border-radius: $borderRadius;
         padding: 2rem;
         box-shadow: 0 10px 10px #333;
-        animation: popup .6s ease forwards;
+        animation: popup 0.6s ease forwards;
         transform: scale(0);
         transform-origin: center;
 
         @keyframes popup {
           to {
             transform: scale(1);
-          } 
+          }
         }
       }
       .head {
@@ -189,7 +188,7 @@
         background: $color-5;
         border-radius: $borderRadius;
         padding: 1rem;
-        transition: .2s;
+        transition: 0.2s;
 
         &:hover {
           background: $color-4;
@@ -206,7 +205,7 @@
     }
   }
 }
-@media (max-width: 650px) and (min-width: 521px){
+@media (max-width: 650px) and (min-width: 521px) {
   .portfolioContent {
     .project {
       width: 49% !important;
@@ -215,31 +214,25 @@
         font-size: 1rem;
       }
     }
-  
-  } 
-   
+  }
 }
-@media (max-width: 520px){
+@media (max-width: 520px) {
   .infosContent {
-      width: 100% !important;
-      height: auto;
-    
-    }
+    width: 100% !important;
+    height: auto;
+  }
 }
-@media (max-width: 520px){
+@media (max-width: 520px) {
   .radioDisplay {
-   display: none !important;
-    
+    display: none !important;
   }
-  .radioDisplay li{
+  .radioDisplay li {
     width: 30px;
-    
   }
-  .radioDisplay li label{
+  .radioDisplay li label {
     font-size: 9px;
-    
   }
-  input[type="radio"]{
+  input[type="radio"] {
     display: none;
   }
   .portfolioContent {

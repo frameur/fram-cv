@@ -1,184 +1,177 @@
 .contactContent {
-    background: $color-3;
-    border-radius: $borderRadius;
+  background: $color-3;
+  border-radius: $borderRadius;
+  width: 100%;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 20% 45% 35%;
+  grid-template-areas:
+    "1"
+    "2"
+    "3";
+
+  .header {
+    grid-area: 1;
     width: 100%;
-    overflow: hidden;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 20% 45% 35%;
-    grid-template-areas: 
-      "1"
-      "2"
-      "3";
-  
-    .header {
-      grid-area: 1;
+    position: relative;
+    background: $color-1;
+    height: 340px;
+
+    &:before {
+      content: "";
       width: 100%;
+      height: 100%;
+      position: absolute;
+      background: url(../../media/map3.jpg) no-repeat center top/cover;
+      filter: contrast(70%);
+    }
+    &:after {
+      content: "";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 30px;
+      background: url(../../media/shape.svg) no-repeat center / cover;
+    }
+  }
+  .contactBox {
+    grid-area: 2;
+    background: $color-1;
+    // opacity: 90%;
+    margin: 0 auto;
+    padding: 1rem 3rem;
+    z-index: 2;
+    border-radius: $borderRadius;
+    box-shadow: 0 3px 10px #333;
+    width: 50%;
+    min-width: 440px;
+    min-height: 200px;
+
+    h1 {
+      text-align: center;
+      font-weight: 700;
+      margin-top: 0.3rem;
       position: relative;
-      background: $color-1;
-      height: 340px;
-  
-      &:before {
-        content: '';
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        background: url(../../media/map3.jpg) no-repeat center top/cover;
-        filter: contrast(70%);
-        
-      }
+      color: $color-6;
+
       &:after {
-        content: '';
-        width: 100%;
-        height: 100%;
+        content: "";
+        height: 1px;
+        width: 50%;
+        background: $color-3;
         position: absolute;
-        top: 30px;
-        background: url(../../media/shape.svg) no-repeat center /cover;
-  
+        bottom: -25px;
+        left: 50%;
+        transform: translateX(-50%);
       }
     }
-    .contactBox {
-      grid-area: 2;
-      background:$color-1;
-      // opacity: 90%;
-      margin: 0 auto;
-      padding: 1rem 3rem;
-      z-index: 2;
-      border-radius: $borderRadius;
-      box-shadow: 0 3px 10px #333;
-      width: 50%;
-      min-width: 440px;
-      min-height: 200px;
-  
-      h1 {
-        text-align: center;
-        font-weight: 700;
-        margin-top: 0.3rem;
+    ul {
+      height: 72%;
+      width: inherit;
+      display: grid;
+      margin-top: 3.5rem;
+
+      li {
         position: relative;
+      }
+
+      i {
+        font-size: 1.4rem;
+        position: absolute;
+        transform: translateY(2px);
         color: $color-6;
-  
-        &:after {
-          content: '';
-          height: 1px;
-          width: 50%;
-          background: $color-3;
-          position: absolute;
-          bottom: -25px;
-          left: 50%;
-          transform: translateX(-50%);
-        }
       }
-      ul {
-        height: 72%;
-        width: inherit;
-        display: grid;
-        margin-top: 3.5rem;
-  
-        li {
-          position: relative;
-        }
-  
-        i {
-          font-size: 1.4rem;
-          position: absolute;
-          transform: translateY(2px);
-          color: $color-6;
-        }
-        span {
-          font-weight: 700;
-          font-size: 1.4rem;
-          color: $color-4;
-          position: absolute;
-          transform: translateX(52px);
+      span,
+      iframe {
+        font-weight: 700;
+        font-size: 1.4rem;
+        color: $color-4;
+        position: absolute;
+        transform: translateX(52px);
+        background: transparent;
+        border: none;
+        outline: none;
+        width: 350px;
+        transition: 0.2s ease;
+      }
+      .clickInput:hover {
+        transform: translateX(56px);
+        cursor: pointer;
+      }
+    }
+  }
+  .socialNetwork {
+    grid-area: 3;
+    @include verticalCenter;
+
+    ul {
+      display: flex;
+      text-align: center;
+      width: 100%;
+      justify-content: space-around;
+
+      a {
+        width: 20%;
+        font-size: 1.2rem;
+        background: $color-1;
+        color: $color-4;
+        border-radius: $borderRadius;
+        display: inline-block;
+        padding: 0.7rem 0;
+        box-shadow: $shadow;
+        transform: scaleY(0);
+        transform-origin: center;
+        transition: 0.2s ease;
+        transition: scale 0.1s;
+        transform-style: preserve-3d;
+
+        &:hover {
           background: transparent;
-          border: none;
-          outline: none;
-          width: 350px;
-          transition: .2s ease;
+          color: $white;
+          box-shadow: 10px 10px 10px $black;
         }
-        .clickInput:hover {
-          transform: translateX(56px);
-          cursor: pointer;
+
+        i {
+          color: $color-6;
+          margin-top: 0.3rem;
         }
       }
-    }
-    .socialNetwork {
-      grid-area: 3;
-      @include verticalCenter;
-  
-      ul {
-        display: flex;
-        text-align: center;
-        width: 100%;
-        justify-content: space-around;
-        
-        
-        
-  
-        a {
-          width: 20%;
-          font-size: 1.2rem;
-          background: $color-1;
-          color: $color-4;
-          border-radius: $borderRadius;
-          display: inline-block;
-          padding: 0.7rem 0;
-          box-shadow: $shadow;
-          transform: scaleY(0);
-          transform-origin: center;
-          transition: .2s ease;
-          transition: scale .1s;
-          transform-style: preserve-3d;
-        
-  
-          &:hover {
-            background: transparent;
-            color: $white;
-            box-shadow: 10px 10px 10px  $black;
-            
-          }
-  
-          i {
-            color: $color-6;
-            margin-top: .3rem;
-          }
+      //ANIMATION
+      @mixin networkAnim($timeout) {
+        animation: pop 2s forwards;
+        animation-delay: $timeout;
+      }
+      @keyframes pop {
+        to {
+          transform: scaleY(1);
         }
-        //ANIMATION
-        @mixin networkAnim($timeout) {
-          animation: pop 2s forwards;
-          animation-delay: $timeout;
-  
-        }
-        @keyframes pop {
-          to {
-            transform: scaleY(1);
-          }
-        }
-        a:nth-child(1) {
-          @include networkAnim(.2s);
-        }
-        a:nth-child(2) {
-          @include networkAnim(.6s);
-        }
-        a:nth-child(3) {
-          @include networkAnim(.8s);
-        }
-        a:nth-child(4) {
-          @include networkAnim(1.2s);
-        }
+      }
+      a:nth-child(1) {
+        @include networkAnim(0.2s);
+      }
+      a:nth-child(2) {
+        @include networkAnim(0.6s);
+      }
+      a:nth-child(3) {
+        @include networkAnim(0.8s);
+      }
+      a:nth-child(4) {
+        @include networkAnim(1.2s);
       }
     }
   }
-  @media screen and (max-width: 500px){
-    .contactContent {
-      .contactBox {
-        min-width: 100% !important;
-      }
-      span {
-        font-size: .9rem !important;
-      }
-      h4 {
-        font-size: .9rem;
-      }
+}
+@media screen and (max-width: 500px) {
+  .contactContent {
+    .contactBox {
+      min-width: 100% !important;
+    }
+    span {
+      font-size: 0.9rem !important;
+    }
+    h4 {
+      font-size: 0.9rem;
     }
   }
+}
