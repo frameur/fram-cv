@@ -33,8 +33,10 @@ export const portfolioData = [
     name: "Monty python",
     languages: ["javascript", "css"],
     languagesIcons: ["fab fa-js", "fab fa-css3-alt"],
-    source: "https://projetmonty.netlify.app/",
-    info: "Fan des Monty python, donc un projet plutôt autour de la dérision. Pour l'instant création simple HTML, CSS, JAVASCRIPT le projet evolue autour de REACTJS.",
+    // source: "https://projetmonty.netlify.app/",
+    source: "http://www.github.com",
+    // info: "Fan des Monty python, donc un projet plutôt autour de la dérision. Pour l'instant création simple HTML, CSS, JAVASCRIPT le projet evolue autour de REACTJS.",
+    info: "Projet en cours de modification. ",
     picture: "./media/montypython.png",
   },
   {

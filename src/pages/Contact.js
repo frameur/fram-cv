@@ -46,6 +46,7 @@ const Contact = () => {
             </li>
           </ul>
         </div>
+
         <div className="socialNetwork">
           <ul>
             <a
