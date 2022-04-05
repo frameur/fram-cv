@@ -36,7 +36,7 @@ export const portfolioData = [
     source: "https://projetmonty.netlify.app/",
     // source: "http://www.github.com",
     info: "Fan des Monty python, donc un projet plutôt autour de la dérision. front-end avec REACTJS",
-    info: "Projet en cours de modification. ",
+    // info: "Projet en cours de modification. ",
     picture: "./media/montypython.png",
   },
   {
