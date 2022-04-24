@@ -13,7 +13,7 @@ export default class ProjectList extends Component {
       { id: 5, value: "database" },
       { id: 6, value: "wordpress" },
     ],
-    selectedRadio: "javascript",
+    selectedRadio: "css",
   };
   handleRadio = (event) => {
     let radio = event.target.value;
