@@ -44,7 +44,7 @@ export const portfolioData = [
     name: "Hans Hartung",
     languages: ["css"],
     languagesIcons: ["fab fa-js", "fab fa-css3-alt", "fab fa-react"],
-    source: "https://frameur.github.io/projetone/",
+    source: "https://projetart.netlify.app/",
     info: "J'ai découvert Hans Hartung lors de mes cours de dessin.",
     picture: "./media/hanshartung.png",
   },
