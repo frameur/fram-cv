@@ -1,5 +1,5 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
+import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 const Navigation = () => {
   return (
@@ -79,11 +79,11 @@ const Navigation = () => {
         </ul>
 
         <div className="signature">
-          <p>François Copyright © {new Date().getFullYear()} </p>
+          <p>© François | 2021 - {new Date().getFullYear()} </p>
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Navigation;
+export default Navigation
