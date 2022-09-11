@@ -12,7 +12,7 @@ export const portfolioData = [
     ],
     source: 'http://www.github.com',
     info: 'Projet en cours de modification. ',
-    picture: './media/brewerbeer.png',
+    picture: './media/brewerbeer.jpg',
   },
   {
     id: 2,
