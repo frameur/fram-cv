@@ -52,17 +52,12 @@ export const portfolioData = [
   },
   {
     id: 5,
-    name: 'React vitrine',
-    languages: ['javascript', 'css', 'reactjs'],
-    languagesIcons: [
-      'fab fa-js',
-      'fab fa-css3-alt',
-      'fab fa-sass',
-      'fab fa-react',
-    ],
-    source: 'http://www.github.com',
-    info: 'modification Projet REACTJS, en attente .',
-    picture: './media/fondbulle.jpg',
+    name: 'Projet Breaking Bad',
+    languages: ['javascript', 'css'],
+    languagesIcons: ['fab fa-js', 'fab fa-css3-alt'],
+    source: 'http://https://frameur.github.io/projetbreaking/.github.com',
+    info: 'Petit projet, responsive breaking bad simple html, css, javascript.',
+    picture: './media/page_breaking.png',
   },
   {
     id: 6,
