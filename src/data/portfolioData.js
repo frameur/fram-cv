@@ -55,7 +55,7 @@ export const portfolioData = [
     name: 'Projet Breaking Bad',
     languages: ['javascript', 'css'],
     languagesIcons: ['fab fa-js', 'fab fa-css3-alt'],
-    source: 'http://https://frameur.github.io/projetbreaking/.github.com',
+    source: 'https://frameur.github.io/projetbreaking/.github.com',
     info: 'Petit projet, responsive breaking bad simple html, css, javascript.',
     picture: './media/page_breaking.png',
   },
