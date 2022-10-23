@@ -6,8 +6,8 @@
     grid-template-columns: 1fr;
     grid-template-rows: 50px 1fr;
     grid-template-areas:
-      "1"
-      "2";
+      '1'
+      '2';
   }
 
   .radioDisplay {
@@ -30,12 +30,12 @@
       z-index: 2;
       @include verticalCenter;
 
-      input[type="radio"] {
+      input[type='radio'] {
         visibility: hidden;
         position: relative;
 
         &:before {
-          content: "";
+          content: '';
           visibility: visible;
           position: absolute;
           top: -4px;
@@ -48,7 +48,7 @@
           transition: 0.3s;
         }
         &:after {
-          content: "";
+          content: '';
           visibility: visible;
           position: absolute;
           top: -4px;
@@ -77,10 +77,11 @@
     }
   }
   .projects {
-    grid-area: 2;
+    // grid-area: 2;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 10px;
 
     .project {
       background: $color-1;
@@ -92,12 +93,13 @@
       padding: 0.3rem;
       box-shadow: $shadow;
       display: grid;
+
       grid-template-rows: 15% 15% 55% 15%;
       grid-template-areas:
-        "1"
-        "2"
-        "3"
-        "4";
+        '1'
+        '2'
+        '3'
+        '4';
     }
     .icons {
       grid-area: 1;
@@ -117,7 +119,7 @@
       font-family: $font-2;
       font-size: 1.65rem;
       @include verticalCenter;
-      justify-content: left;
+      justify-content: center;
       color: $color-4;
     }
     img {
@@ -232,7 +234,7 @@
   .radioDisplay li label {
     font-size: 9px;
   }
-  input[type="radio"] {
+  input[type='radio'] {
     display: none;
   }
   .portfolioContent {

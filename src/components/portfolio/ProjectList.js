@@ -1,26 +1,27 @@
-import React, { Component } from "react";
-import { portfolioData } from "../../data/portfolioData";
-import Project from "./Project";
+import React, { Component } from 'react'
+import { portfolioData } from '../../data/portfolioData'
+import Project from './Project'
 
 export default class ProjectList extends Component {
   state = {
     projects: portfolioData,
     radios: [
-      { id: 1, value: "javascript" },
-      { id: 2, value: "css" },
-      { id: 3, value: "reactjs" },
-      { id: 4, value: "vuejs" },
-      { id: 5, value: "database" },
-      { id: 6, value: "wordpress" },
+      { id: 1, value: 'javascript' },
+      { id: 2, value: 'css' },
+      { id: 3, value: 'reactjs' },
+      { id: 4, value: 'vuejs' },
+      { id: 5, value: 'mysql' },
+      { id: 6, value: 'mongodb' },
+      { id: 7, value: 'sketchbook' },
     ],
-    selectedRadio: "css",
-  };
+    selectedRadio: 'javascript',
+  }
   handleRadio = (event) => {
-    let radio = event.target.value;
-    this.setState({ selectedRadio: radio });
-  };
+    let radio = event.target.value
+    this.setState({ selectedRadio: radio })
+  }
   render() {
-    let { projects, radios, selectedRadio } = this.state;
+    let { projects, radios, selectedRadio } = this.state
     return (
       <div className="portfolioContent">
         <ul className="radioDisplay">
@@ -37,17 +38,17 @@ export default class ProjectList extends Component {
                 />
                 <label htmlFor={radio.value}>{radio.value}</label>
               </li>
-            );
+            )
           })}
         </ul>
         <div className="projects">
           {projects
             .filter((item) => item.languages.includes(selectedRadio))
             .map((item) => {
-              return <Project key={item.id} item={item} />;
+              return <Project key={item.id} item={item} />
             })}
         </div>
       </div>
-    );
+    )
   }
 }
