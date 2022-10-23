@@ -149,16 +149,16 @@
       position: absolute;
       top: 0;
       left: 0;
-      // bottom: 0;
+      bottom: 0;
       right: 0;
       background: rgba(0, 0, 0, 0.507);
       animation: popup 0.3s ease forwards;
       transform-origin: center;
-      width: 40%;
+      transition: 0.5s;
 
       .infosContent {
         position: relative;
-        top: 50%;
+        top: 30%;
         width: 40%;
         margin: 0 auto;
         color: $color-5;
@@ -173,11 +173,6 @@
         @keyframes popup {
           to {
             transform: scale(1);
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
-            width: 60%;
           }
         }
       }
