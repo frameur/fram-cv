@@ -66,21 +66,21 @@ export const portfolioData = [
     info: 'Petit projet, responsive breaking bad simple html, css, javascript.',
     picture: './media/page_breaking.png',
   },
-  {
-    id: 6,
-    name: 'Projet Gatsby',
-    languages: ['javascript', 'css', 'reactjs'],
-    languagesIcons: [
-      'fab fa-js',
-      'fab fa-css3-alt',
-      'fab fa-html5',
-      'fab fa-react',
-    ],
-    source: 'https://gatsbypagination.netlify.app/',
-    info:
-      "Petit projet avec gatsby, réalisation d'une pagination. Gestion des images avec graphql.",
-    picture: './media/gatsbypagination.png',
-  },
+  // {
+  //   id: 6,
+  //   name: 'Projet Gatsby',
+  //   languages: ['javascript', 'css', 'reactjs'],
+  //   languagesIcons: [
+  //     'fab fa-js',
+  //     'fab fa-css3-alt',
+  //     'fab fa-html5',
+  //     'fab fa-react',
+  //   ],
+  //   source: 'https://gatsbypagination.netlify.app/',
+  //   info:
+  //     "Petit projet avec gatsby, réalisation d'une pagination. Gestion des images avec graphql.",
+  //   picture: '',
+  // },
   {
     id: 7,
     name: 'Portfolio gatsby',

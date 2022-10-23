@@ -14,7 +14,7 @@ export default class ProjectList extends Component {
       { id: 6, value: 'mongodb' },
       { id: 7, value: 'sketchbook' },
     ],
-    selectedRadio: 'javascript',
+    selectedRadio: 'css',
   }
   handleRadio = (event) => {
     let radio = event.target.value
