@@ -59,7 +59,7 @@ export const portfolioData = [
   },
   {
     id: 5,
-    name: 'Projet Breaking Bad',
+    name: 'Breaking Bad',
     languages: ['javascript', 'css'],
     languagesIcons: ['fab fa-js', 'fab fa-css3-alt', 'fab fa-html5'],
     source: 'https://frameur.github.io/projetbreaking/',
