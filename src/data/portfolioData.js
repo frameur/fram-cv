@@ -78,8 +78,7 @@ export const portfolioData = [
       'fab fa-react',
     ],
     source: 'https://systemsolaire.netlify.app/earth',
-    info:
-      "Petit projet avec gatsby, réalisation d'une pagination. Gestion des images avec graphql.",
+    info: 'Projet sur le systeme solaire avec reactjs.',
     picture: './media/systemsolar.png',
   },
   {
