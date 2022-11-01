@@ -52,15 +52,11 @@ export const portfolioData = [
   {
     id: 4,
     name: 'Hans Hartung',
-    languages: ['css'],
-    languagesIcons: [
-      'fab fa-js',
-      'fab fa-css3-alt',
-      'fab fa-html5',
-      'fab fa-react',
-    ],
+    languages: ['javascript', 'css'],
+    languagesIcons: ['fab fa-js', 'fab fa-css3-alt', 'fab fa-html5'],
     source: 'https://projetart.netlify.app/',
-    info: "J'ai découvert Hans Hartung lors de mes cours de dessin.",
+    info:
+      "J'ai découvert Hans Hartung lors de mes cours de dessin. J'ai utilisé la librairie AOS.",
     picture: './media/hanshartung.png',
   },
   {
