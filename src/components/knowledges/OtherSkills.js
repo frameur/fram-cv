@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 
 const OtherSkills = () => {
   return (
@@ -38,12 +38,15 @@ const OtherSkills = () => {
             <i className="fas fa-check-square"></i> 3dsmax
           </li>
           <li>
-            <i className="fas fa-check-square"></i> Anglais Portugais
+            <i className="fas fa-check-square"></i> Suite Office
+          </li>
+          <li>
+            <i className="fas fa-check-square"></i> Anglais / Portugais
           </li>
         </ul>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default OtherSkills;
+export default OtherSkills
