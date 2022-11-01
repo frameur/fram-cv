@@ -14,25 +14,45 @@ const Navigation = () => {
         <ul>
           <li>
             <NavLink exact to="/" activeClassName="navActive">
-              <i className="fas fa-home"></i>
+              <i className="">
+                <img className="imgIcon" src="../../media/house.png" alt="" />
+              </i>
               <span>Accueil</span>
             </NavLink>
           </li>
           <li>
             <NavLink exact to="/competences" activeClassName="navActive">
-              <i className="fas fa-mountain"></i>
+              <i className="">
+                <img
+                  className="imgIcon"
+                  src="../../media/soft-skills.png"
+                  alt=""
+                />
+              </i>
               <span>Compétences</span>
             </NavLink>
           </li>
           <li>
             <NavLink exact to="/portfolio" activeClassName="navActive">
-              <i className="fas fa-images"></i>
+              <i className="">
+                <img
+                  className="imgIcon"
+                  src="../../media/portfolio.png"
+                  alt=""
+                />
+              </i>
               <span>Portfolio</span>
             </NavLink>
           </li>
           <li>
             <NavLink exact to="/contact" activeClassName="navActive">
-              <i className="fas fa-address-book"></i>
+              <i className="">
+                <img
+                  className="imgIcon"
+                  src="../../media/communicate.png"
+                  alt=""
+                />
+              </i>
               <span>Contact</span>
             </NavLink>
           </li>

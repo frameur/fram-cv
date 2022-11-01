@@ -1,6 +1,6 @@
-import React from "react";
-import Navigation from "../components/Navigation3";
-import { CopyToClipboard } from "react-copy-to-clipboard";
+import React from 'react'
+import Navigation from '../components/Navigation3'
+import { CopyToClipboard } from 'react-copy-to-clipboard'
 
 const Contact = () => {
   return (
@@ -14,17 +14,29 @@ const Contact = () => {
           <h1>Contactez-moi</h1>
           <ul>
             <li>
-              <i className="fas fa-map-marker-alt"></i>
+              <i className="">
+                <img
+                  className="imgContact"
+                  src="../../media/address.png"
+                  alt=""
+                />
+              </i>
 
               <span>85170 BELLEVIGNY</span>
             </li>
             <li>
-              <i className="fas fa-mobile-alt"></i>
+              <i className="">
+                <img
+                  className="imgContact"
+                  src="../../media/smartphone.png"
+                  alt=""
+                />
+              </i>
               <CopyToClipboard text="0642844284">
                 <span
                   className="clickInput"
                   onClick={() => {
-                    alert("Téléphone copié !");
+                    alert('Téléphone copié !')
                   }}
                 >
                   07 86 88 73 44
@@ -32,12 +44,18 @@ const Contact = () => {
               </CopyToClipboard>
             </li>
             <li>
-              <i className="fas fa-envelope"></i>
+              <i className="">
+                <img
+                  className="imgContact"
+                  src="../../media/email.png"
+                  alt=""
+                />
+              </i>
               <CopyToClipboard text="francoisramos6121@gmail.com">
                 <span
                   className="clickInput"
                   onClick={() => {
-                    alert("E-mail copié !");
+                    alert('E-mail copié !')
                   }}
                 >
                   francoisramos6121@gmail.com
@@ -85,7 +103,7 @@ const Contact = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Contact;
+export default Contact

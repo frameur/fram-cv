@@ -9,11 +9,11 @@
     overflow: hidden;
 
     &:after {
-      content: "";
+      content: '';
       position: absolute;
       height: 100%;
       width: inherit;
-      background: url("../../media/fram2.jpg") no-repeat center/cover;
+      background: url('../../media/fram2.jpg') no-repeat center/cover;
       z-index: -1;
       filter: brightness(60%);
     }
@@ -33,23 +33,26 @@
       h2 {
         font-size: 2.5rem;
         text-transform: uppercase;
-        padding: 1.5rem 0 7rem;
-        color: $color-3;
+        padding: 1.5rem 0 3rem;
+        color: $color-6;
         text-shadow: 1px 4px 1px $black;
       }
       .pdf {
+        display: flex;
+        justify-content: center;
         a {
-          font-size: 1.5rem;
-          background: $color-3;
-          padding: 1rem 2rem;
-          border-radius: $borderRadius;
-          box-shadow: 0 5px 1px rgb(15, 15, 15);
-          transition: 0.2s ease;
+          .imgCv {
+            background: url(../../media/cv.png) center/cover;
+            width: 100px;
+            height: 100px;
+            transition: 0.5s;
+            display: flex;
+            justify-content: center;
 
-          &:hover {
-            color: $white;
-            background: $color-5;
-            box-shadow: 5px 5px 5px $color-5;
+            &:hover {
+              color: $white;
+              transform: scale(1.3);
+            }
           }
         }
       }
@@ -64,7 +67,7 @@
 @media screen and (max-width: 580px) {
   .homeContent {
     &:after {
-      background: url("../../media/fram2.jpg") no-repeat 80% 50% / cover !important;
+      background: url('../../media/fram2.jpg') no-repeat 80% 50% / cover !important;
     }
     h1 {
       font-size: 3rem !important;
