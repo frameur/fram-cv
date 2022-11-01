@@ -1,5 +1,5 @@
-import React from "react";
-import Navigation from "../components/Navigation";
+import React from 'react'
+import Navigation from '../components/Navigation'
 
 const Home = () => {
   return (
@@ -8,10 +8,7 @@ const Home = () => {
       <div className="homeContent">
         <div className="content">
           <h1>François RAMOS</h1>
-          <h2>
-            Développeur Web <br />
-            front-end{" "}
-          </h2>
+          <h2>Développeur Web</h2>
           <div className="pdf">
             <a href="./media/cvfram01.pdf" target="_blank">
               Télécharger CV
@@ -20,7 +17,7 @@ const Home = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home

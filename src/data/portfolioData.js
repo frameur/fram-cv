@@ -35,7 +35,12 @@ export const portfolioData = [
     id: 3,
     name: 'Monty python',
     languages: ['javascript', 'css'],
-    languagesIcons: ['fab fa-js', 'fab fa-css3-alt', 'fab fa-html5'],
+    languagesIcons: [
+      'fab fa-js',
+      'fab fa-css3-alt',
+      'fab fa-html5',
+      'fab fa-react',
+    ],
     source: 'https://projetmonty.netlify.app/',
     // source: "http://www.github.com",
     info:
@@ -108,7 +113,7 @@ export const portfolioData = [
       'fab fa-react',
     ],
     source: 'https://react-api-restcountries.netlify.app/',
-    info: 'API countries avec REACTJS avec le module AXIOS.',
+    info: 'API countries avec REACTJS avec AXIOS.',
     picture: './media/reactcountries.png',
   },
   {
