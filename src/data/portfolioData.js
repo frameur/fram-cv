@@ -39,6 +39,7 @@ export const portfolioData = [
       'fab fa-js',
       'fab fa-css3-alt',
       'fab fa-html5',
+      'fab fa-sass',
       'fab fa-react',
     ],
     source: 'https://projetmonty.netlify.app/',
