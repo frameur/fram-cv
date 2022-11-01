@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 
 const Experience = () => {
   return (
@@ -8,7 +8,6 @@ const Experience = () => {
         <h4>Formation Développeur web et web mobile</h4>
         <h5>2020 ARINFO la Roche sur YON</h5>
         <p>
-          {" "}
           Maquetter une application. Réaliser une interface utilisateur web
           statique et adaptable. Développer une interface utilisateur web
           dynamique. Réaliser une interface utilisateur avec une solution de
@@ -34,7 +33,7 @@ const Experience = () => {
         </p>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Experience;
+export default Experience
