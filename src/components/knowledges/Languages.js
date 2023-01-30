@@ -10,7 +10,7 @@ class Languages extends Component {
       { id: 4, value: 'Python', xp: 0.1 },
     ],
     frameworks: [
-      { id: 1, value: 'Reactjs', xp: 1.3 },
+      { id: 1, value: 'Reactjs', xp: 1.35 },
       { id: 2, value: 'Vuejs', xp: 0.5 },
       { id: 3, value: 'Bootstrap', xp: 0.3 },
       { id: 4, value: 'material UI', xp: 0.5 },
