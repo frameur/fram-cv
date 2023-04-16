@@ -26,7 +26,7 @@ const Navigation = () => {
                 <img
                   className="imgIcon"
                   src="../../media/soft-skills.png"
-                  alt=""
+                  alt="icon home"
                 />
               </i>
               <span>Compétences</span>
