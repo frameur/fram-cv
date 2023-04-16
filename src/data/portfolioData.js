@@ -132,7 +132,7 @@ export const portfolioData = [
     name: 'Effet miroir',
     languages: ['css', 'html', 'sketchbook'],
     languagesIcons: ['fab fa-css3-alt', 'fab fa-html5'],
-    source: 'https://frameur.github.io/dessinmiroir/',
+    source: 'https://effetmiroir.netlify.app/',
     info:
       'Projet de dessin sur tablette graphique xp-pen artist 22e pro avec le logiciel sketchbook',
     picture: './media/effetmiroir.png',
