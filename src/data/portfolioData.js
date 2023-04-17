@@ -1,19 +1,18 @@
 export const portfolioData = [
   {
     id: 1,
-    name: 'Brewerbeer',
-    languages: ['javascript', 'css', 'reactjs', 'mysql'],
+    name: 'FilmseriesApi',
+    languages: ['javascript', 'css', 'reactjs'],
     languagesIcons: [
       'fab fa-js',
       'fab fa-css3-alt',
       'fab fa-html5',
-      'fa fa-database',
       'fab fa-sass',
       'fab fa-react',
     ],
-    source: 'http://www.github.com',
-    info: 'Projet en cours de modification. ',
-    picture: './media/brewerbeer.jpg',
+    source: 'https://filmserie.netlify.app/',
+    info: 'Projet avec reactjs, api TMBD',
+    picture: './media/filmapi.PNG',
   },
   {
     id: 2,
