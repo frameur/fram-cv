@@ -17,18 +17,18 @@ export const portfolioData = [
   {
     id: 2,
     name: 'Mevn full',
-    languages: ['javascript', 'css', 'vuejs', 'mongodb'],
+    languages: ['javascript', 'css', 'reactjs'],
     languagesIcons: [
       'fab fa-js',
       'fab fa-css3-alt',
       'fab fa-html5',
-      'fa fa-database',
-      'fab fa-vuejs',
+      'fab fa-sass',
+      'fab fa-react',
     ],
-    source: 'https://mevnfull.herokuapp.com/',
+    source: 'https://thebrasseurs.netlify.app',
     info:
       'Pour le frontend : VUEJS, le backend : NODEJS, gestion base de donnée : MONGODB.  ',
-    picture: './media/mevn-recipes-other.png',
+    picture: './media/brasseur.png',
   },
   {
     id: 3,
