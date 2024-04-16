@@ -16,7 +16,7 @@ export const portfolioData = [
   },
   {
     id: 2,
-    name: 'Mevn full',
+    name: 'Brasseur de France',
     languages: ['javascript', 'css', 'reactjs'],
     languagesIcons: [
       'fab fa-js',
@@ -27,7 +27,7 @@ export const portfolioData = [
     ],
     source: 'https://thebrasseurs.netlify.app',
     info:
-      'Pour le frontend : VUEJS, le backend : NODEJS, gestion base de donnée : MONGODB.  ',
+      "Projet Brasseur de France, j'ai utilisé react, leaflet et création de la base de données. ",
     picture: './media/brasseur.png',
   },
   {
