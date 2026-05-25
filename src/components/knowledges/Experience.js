@@ -1,6 +1,6 @@
-import React from 'react'
+import React, { memo } from 'react'
 
-const Experience = () => {
+const Experience = memo(() => {
   return (
     <div className="experience">
       <h3>Expérience</h3>
@@ -33,7 +33,9 @@ const Experience = () => {
         </p>
       </div>
     </div>
-  )
-}
+  );
+});
 
-export default Experience
+Experience.displayName = 'Experience';
+
+export default Experience;

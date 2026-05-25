@@ -1,23 +1,24 @@
-import React from 'react';
+import React, { memo } from 'react';
 import Experience from '../components/knowledges/Experience';
 import Hobbies from '../components/knowledges/Hobbies';
 import Languages from '../components/knowledges/Languages';
 import OtherSkills from '../components/knowledges/OtherSkills';
 import Navigation from '../components/Navigation';
 
-const Knowledges = () => {
-    return (
-        <div className="knowledges">
-            <Navigation profileImage="./media/francois3.jpg"/>
-            <div className="knowledgesContent">
-                <Languages/>
-                <Experience/>
-                <OtherSkills/>
-                <Hobbies/>
+const Knowledges = memo(() => {
+  return (
+    <div className="knowledges">
+      <Navigation profileImage="./media/francois3.jpg" />
+      <div className="knowledgesContent">
+        <Languages />
+        <Experience />
+        <OtherSkills />
+        <Hobbies />
+      </div>
+    </div>
+  );
+});
 
-            </div>
-        </div>
-    );
-};
+Knowledges.displayName = 'Knowledges';
 
 export default Knowledges;

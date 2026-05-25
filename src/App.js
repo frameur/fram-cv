@@ -8,17 +8,15 @@ import NotFound from './pages/NotFound';
 
 const App = () => {
   return (
-    <>
-      <Router>
+    <Router>
       <Switch>
-        <Route path="/" exact component={Home}/>
-        <Route path="/competences" component={Knowledges}/>
-        <Route path="/portfolio" component={Portfolio}/>
-        <Route path="/contact" component={Contact}/>
-        <Route component={NotFound}/>
+        <Route path="/" exact component={Home} />
+        <Route path="/competences" component={Knowledges} />
+        <Route path="/portfolio" component={Portfolio} />
+        <Route path="/contact" component={Contact} />
+        <Route component={NotFound} />
       </Switch>
-      </Router>
-    </>
+    </Router>
   );
 };
 

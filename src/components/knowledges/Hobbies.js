@@ -1,33 +1,29 @@
-import React from "react";
+import React, { memo } from 'react'
 
-const Hobbies = () => {
+const HOBBIES_LIST = [
+  { icon: 'fas fa-bicycle fa-spin', label: 'VTT' },
+  { icon: 'fas fa-paint-brush fa-spin', label: 'Dessin' },
+  { icon: 'fas fa-camera-retro fa-spin', label: 'Photographie' },
+  { icon: 'far fa-file-video fa-spin', label: 'Cinéma' },
+  { icon: 'fas fa-atom fa-spin', label: 'Physique quantique' },
+];
+
+const Hobbies = memo(() => {
   return (
     <div className="hobbies">
       <h3>Intérêts</h3>
       <ul>
-        <li className="hobby">
-          <i className="fas fa-bicycle fa-spin"></i>
-          <span>VTT</span>
-        </li>
-        <li className="hobby">
-          <i className="fas fa-paint-brush fa-spin"></i>
-          <span>Dessin</span>
-        </li>
-        <li className="hobby">
-          <i className="fas fa-camera-retro fa-spin"></i>
-          <span>Photographie</span>
-        </li>
-        <li className="hobby">
-          <i className="far fa-file-video fa-spin"></i>
-          <span>Cinéma</span>
-        </li>
-        <li className="hobby">
-          <i className="fas fa-atom fa-spin"></i>
-          <span>Physique quantique</span>
-        </li>
+        {HOBBIES_LIST.map((hobby) => (
+          <li key={hobby.label} className="hobby">
+            <i className={hobby.icon}></i>
+            <span>{hobby.label}</span>
+          </li>
+        ))}
       </ul>
     </div>
   );
-};
+});
+
+Hobbies.displayName = 'Hobbies';
 
 export default Hobbies;

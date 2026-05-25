@@ -1,8 +1,22 @@
-import React from 'react'
+import React, { useState, memo } from 'react'
 import Navigation from '../components/Navigation'
 import { CopyToClipboard } from 'react-copy-to-clipboard'
 
-const Contact = () => {
+const SOCIAL_LINKS = [
+  { id: 1, url: 'https://www.linkedin.com/in/fran%C3%A7ois-ramos-b5a76a216/', label: 'Linkedin', icon: 'fab fa-linkedin' },
+  { id: 2, url: 'https://github.com/frameur', label: 'Github', icon: 'fab fa-github' },
+  { id: 3, url: 'https://twitter.com', label: 'Twitter', icon: 'fab fa-twitter' },
+  { id: 4, url: 'https://codepen.io/frameur', label: 'CodePen', icon: 'fab fa-codepen' },
+];
+
+const Contact = memo(() => {
+  const [copiedType, setCopiedType] = useState(null);
+
+  const handleCopy = (type) => {
+    setCopiedType(type);
+    setTimeout(() => setCopiedType(null), 2000);
+  };
+
   return (
     <div className="contact">
       <Navigation profileImage="./media/tetefrancois.jpg" />
@@ -17,29 +31,23 @@ const Contact = () => {
               <i className="">
                 <img
                   className="imgContact"
-                  src="../../media/address.png"
-                  alt=""
+                  src="./media/address.png"
+                  alt="Adresse"
                 />
               </i>
-
               <span>85170 BELLEVIGNY</span>
             </li>
             <li>
               <i className="">
                 <img
                   className="imgContact"
-                  src="../../media/smartphone.png"
-                  alt=""
+                  src="./media/smartphone.png"
+                  alt="Téléphone"
                 />
               </i>
-              <CopyToClipboard text="0642844284">
-                <span
-                  className="clickInput"
-                  onClick={() => {
-                    alert('Téléphone copié !')
-                  }}
-                >
-                  07 86 88 73 44
+              <CopyToClipboard text="0764284284" onCopy={() => handleCopy('phone')}>
+                <span className="clickInput">
+                  {copiedType === 'phone' ? '✓ Copié!' : '07 64 28 42 84'}
                 </span>
               </CopyToClipboard>
             </li>
@@ -47,18 +55,13 @@ const Contact = () => {
               <i className="">
                 <img
                   className="imgContact"
-                  src="../../media/email.png"
-                  alt=""
+                  src="./media/email.png"
+                  alt="Email"
                 />
               </i>
-              <CopyToClipboard text="francoisramos6121@gmail.com">
-                <span
-                  className="clickInput"
-                  onClick={() => {
-                    alert('E-mail copié !')
-                  }}
-                >
-                  francoisramos6121@gmail.com
+              <CopyToClipboard text="francoisramos6121@gmail.com" onCopy={() => handleCopy('email')}>
+                <span className="clickInput">
+                  {copiedType === 'email' ? '✓ Copié!' : 'francoisramos6121@gmail.com'}
                 </span>
               </CopyToClipboard>
             </li>
@@ -67,43 +70,25 @@ const Contact = () => {
 
         <div className="socialNetwork">
           <ul>
-            <a
-              href="https://fr.linkedin.com/"
-              target="blank"
-              rel="noopener noreferrer"
-            >
-              <h4>Linkedin</h4>
-              <i className="fab fa-linkedin"></i>
-            </a>
-            <a
-              href="https://github.com/"
-              target="blank"
-              rel="noopener noreferrer"
-            >
-              <h4>Github</h4>
-              <i className="fab fa-github"></i>
-            </a>
-            <a
-              href="https://twitter.com/?lang=fr"
-              target="blank"
-              rel="noopenernoreferrer"
-            >
-              <h4>Twitter</h4>
-              <i className="fab fa-twitter"></i>
-            </a>
-            <a
-              href="https://codepen.io/"
-              target="blank"
-              rel="noopener noreferrer"
-            >
-              <h4>CodePen</h4>
-              <i className="fab fa-codepen"></i>
-            </a>
+            {SOCIAL_LINKS.map((link) => (
+              <a
+                key={link.id}
+                href={link.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={link.label}
+              >
+                <h4>{link.label}</h4>
+                <i className={link.icon}></i>
+              </a>
+            ))}
           </ul>
         </div>
       </div>
     </div>
-  )
-}
+  );
+});
 
-export default Contact
+Contact.displayName = 'Contact';
+
+export default Contact;

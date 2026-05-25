@@ -1,108 +1,106 @@
-import React from 'react'
+import React, { memo } from 'react'
 import { NavLink } from 'react-router-dom'
 
-const Navigation = ({ profileImage = "./media/francois2.jpg" }) => {
+const SOCIAL_LINKS = [
+  {
+    id: 1,
+    url: 'https://www.linkedin.com/in/fran%C3%A7ois-ramos-b5a76a216/',
+    icon: 'fab fa-linkedin',
+    label: 'LinkedIn',
+  },
+  {
+    id: 2,
+    url: 'https://github.com/frameur',
+    icon: 'fab fa-github',
+    label: 'GitHub',
+  },
+  {
+    id: 3,
+    url: 'https://twitter.com',
+    icon: 'fab fa-twitter',
+    label: 'Twitter',
+  },
+  {
+    id: 4,
+    url: 'https://codepen.io/frameur',
+    icon: 'fab fa-codepen',
+    label: 'CodePen',
+  },
+];
+
+const NAVIGATION_ITEMS = [
+  {
+    id: 1,
+    to: '/',
+    icon: './media/house.png',
+    label: 'Accueil',
+  },
+  {
+    id: 2,
+    to: '/competences',
+    icon: './media/soft-skills.png',
+    label: 'Compétences',
+  },
+  {
+    id: 3,
+    to: '/portfolio',
+    icon: './media/portfolio.png',
+    label: 'Portfolio',
+  },
+  {
+    id: 4,
+    to: '/contact',
+    icon: './media/communicate.png',
+    label: 'Contact',
+  },
+];
+
+const Navigation = memo(({ profileImage = './media/francois2.jpg' }) => {
   return (
     <div className="sidebar">
       <div className="id">
         <div className="idContent">
-          <img src={profileImage} alt="profil-pic" />
+          <img src={profileImage} alt="François RAMOS - Profil" />
           <h3>François RAMOS</h3>
         </div>
       </div>
       <div className="navigation">
         <ul>
-          <li>
-            <NavLink exact to="/" activeClassName="navActive">
-              <i className="">
-                <img className="imgIcon" src="../../media/house.png" alt="" />
-              </i>
-              <span>Accueil</span>
-            </NavLink>
-          </li>
-          <li>
-            <NavLink exact to="/competences" activeClassName="navActive">
-              <i className="">
-                <img
-                  className="imgIcon"
-                  src="../../media/soft-skills.png"
-                  alt="icon home"
-                />
-              </i>
-              <span>Compétences</span>
-            </NavLink>
-          </li>
-          <li>
-            <NavLink exact to="/portfolio" activeClassName="navActive">
-              <i className="">
-                <img
-                  className="imgIcon"
-                  src="../../media/portfolio.png"
-                  alt=""
-                />
-              </i>
-              <span>Portfolio</span>
-            </NavLink>
-          </li>
-          <li>
-            <NavLink exact to="/contact" activeClassName="navActive">
-              <i className="">
-                <img
-                  className="imgIcon"
-                  src="../../media/communicate.png"
-                  alt=""
-                />
-              </i>
-              <span>Contact</span>
-            </NavLink>
-          </li>
+          {NAVIGATION_ITEMS.map((item) => (
+            <li key={item.id}>
+              <NavLink exact to={item.to} activeClassName="navActive">
+                <i className="">
+                  <img className="imgIcon" src={item.icon} alt="" />
+                </i>
+                <span>{item.label}</span>
+              </NavLink>
+            </li>
+          ))}
         </ul>
       </div>
       <div className="socialNetwork">
         <ul>
-          <li>
-            <a
-              href="https://fr.linkedin.com/"
-              target="blank"
-              rel="noopener noreferrer"
-            >
-              <i className="fab fa-linkedin"></i>
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://github.com/"
-              target="blank"
-              rel="noopener noreferrer"
-            >
-              <i className="fab fa-github"></i>
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://mobile.twitter.com/?lang=fr"
-              target="blank"
-              rel="noopener noreferrer"
-            >
-              <i className="fab fa-twitter"></i>
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://codepen.io/"
-              target="blank"
-              rel="noopener noreferrer"
-            >
-              <i className="fab fa-codepen"></i>
-            </a>
-          </li>
+          {SOCIAL_LINKS.map((link) => (
+            <li key={link.id}>
+              <a
+                href={link.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={link.label}
+              >
+                <i className={link.icon}></i>
+              </a>
+            </li>
+          ))}
         </ul>
         <div className="signature">
-          <p>© François | 2021 - {new Date().getFullYear()} </p>
+          <p>© François | 2021 - {new Date().getFullYear()}</p>
         </div>
       </div>
     </div>
-  )
-}
+  );
+});
 
-export default Navigation
+Navigation.displayName = 'Navigation';
+
+export default Navigation;

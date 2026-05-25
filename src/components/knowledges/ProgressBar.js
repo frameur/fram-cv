@@ -1,18 +1,17 @@
-import React from "react";
+import React, { memo } from 'react';
 
-const ProgressBar = (props) => {
+const ProgressBar = memo(({ className, title, languages, maxYears = 10 }) => {
   return (
-    <div className={props.className}>
-      <h3>{props.title}</h3>
+    <div className={className}>
+      <h3>{title}</h3>
       <div className="years">
         <span>Expérience</span>
-        <span>50 %</span>
-        <span>100 %</span>
+        <span>{Math.round(maxYears / 2)} ans</span>
+        <span>{maxYears} ans</span>
       </div>
       <div>
-        {props.languages.map((item) => {
-          let xpYears = 2;
-          let progressBar = (item.xp / xpYears) * 100 + "%";
+        {languages.map((item) => {
+          const progressBar = (item.xp / maxYears) * 100 + '%';
           return (
             <div key={item.id} className="languagesList">
               <li>{item.value}</li>
@@ -23,6 +22,8 @@ const ProgressBar = (props) => {
       </div>
     </div>
   );
-};
+});
+
+ProgressBar.displayName = 'ProgressBar';
 
 export default ProgressBar;
