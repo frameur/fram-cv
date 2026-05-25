@@ -75,32 +75,32 @@
 
   .projects {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    gap: 0.5rem;
-    padding: 2rem 0;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+    padding: 0;
 
     .project {
       background: $color-1;
-      border-radius: $borderRadius;
-      padding: 0.5rem;
-      box-shadow: $shadow;
+      border-radius: 0;
+      padding: 1rem;
+      box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2);
       display: flex;
       flex-direction: column;
       align-items: center;
       text-align: center;
-      cursor: pointer;
       transition: transform 0.3s, box-shadow 0.3s;
+      aspect-ratio: 1 / 1.3;
 
       &:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        transform: scale(1.02);
+        box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.3);
       }
 
       .icons {
         display: flex;
         justify-content: center;
         gap: 0.3rem;
-        margin-bottom: 0.3rem;
+        margin-bottom: 0.5rem;
         flex-wrap: wrap;
 
         i {
@@ -112,104 +112,37 @@
 
       h3 {
         font-family: $font-2;
-        font-size: 1rem;
+        font-size: 1.1rem;
         color: $color-4;
-        margin-bottom: 0.5rem;
-        line-height: 1.1;
+        margin-bottom: 0.8rem;
+        line-height: 1.2;
+        flex: 0 0 auto;
       }
 
       img {
         width: 100%;
-        height: 100px;
+        height: auto;
+        max-height: 120px;
         object-fit: cover;
-        border-radius: 4px;
-        box-shadow: 0 2px 6px #333;
-      }
-    }
-  }
-}
-
-// Modal overlay
-.showInfos {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.7);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 1000;
-  animation: fadeIn 0.3s ease forwards;
-  padding: 1rem;
-
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-
-  .infosContent {
-    background: $color-1;
-    border-radius: $borderRadius;
-    padding: 1.5rem;
-    max-width: 700px;
-    width: 100%;
-    max-height: 80vh;
-    overflow-y: auto;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-    animation: slideIn 0.4s ease forwards;
-    color: $color-5;
-    display: flex;
-    flex-direction: column;
-
-    @keyframes slideIn {
-      from {
-        transform: scale(0.9);
-        opacity: 0;
-      }
-      to {
-        transform: scale(1);
-        opacity: 1;
-      }
-    }
-
-    .head {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 1rem;
-      gap: 1rem;
-      flex-wrap: wrap;
-
-      h2 {
-        color: $color-4;
-        font-size: 1.5rem;
-        margin: 0;
+        border-radius: 0;
+        box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.1);
+        margin-bottom: 0.8rem;
         flex: 1;
-        min-width: 150px;
       }
-    }
 
-    .sourceCode {
-      display: flex;
-
-      .button {
+      .viewButton {
         cursor: pointer;
         color: $color-1;
         background: $color-5;
         border: none;
-        border-radius: $borderRadius;
-        padding: 0.6rem 1.2rem;
+        border-radius: 0;
+        padding: 0.7rem 1.2rem;
         transition: 0.2s;
         text-decoration: none;
         font-weight: bold;
         font-size: 0.95rem;
-        white-space: nowrap;
+        width: 100%;
+        display: block;
 
         &:hover {
           background: $color-4;
@@ -217,70 +150,42 @@
         }
       }
     }
-
-    .text {
-      text-align: justify;
-      line-height: 1.5;
-      margin: 1rem 0;
-      color: $color-5;
-      font-size: 0.95rem;
-      flex-grow: 1;
-      overflow-y: auto;
-      padding-right: 0.5rem;
-
-      &::-webkit-scrollbar {
-        width: 6px;
-      }
-      &::-webkit-scrollbar-track {
-        background: rgba(0, 0, 0, 0.1);
-        border-radius: 3px;
-      }
-      &::-webkit-scrollbar-thumb {
-        background: $color-4;
-        border-radius: 3px;
-
-        &:hover {
-          background: $color-5;
-        }
-      }
-    }
-
-    .return {
-      cursor: pointer;
-      color: $color-1;
-      background: $color-5;
-      border: none;
-      border-radius: $borderRadius;
-      padding: 0.8rem 1.5rem;
-      transition: 0.2s;
-      width: 100%;
-      font-weight: bold;
-      font-size: 0.95rem;
-      margin-top: 1rem;
-
-      &:hover {
-        background: $color-4;
-        transform: scale(1.02);
-      }
-    }
   }
 }
 
 // Responsive
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
   .portfolio .projects {
-    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-    gap: 0.5rem;
+    grid-template-columns: repeat(4, 1fr);
+
+    .project {
+      padding: 0.8rem;
+      aspect-ratio: 1 / 1.3;
+
+      h3 {
+        font-size: 1rem;
+        margin-bottom: 0.6rem;
+      }
+
+      img {
+        max-height: 110px;
+        margin-bottom: 0.6rem;
+      }
+
+      .viewButton {
+        padding: 0.6rem 1rem;
+        font-size: 0.9rem;
+      }
+
+      .icons i {
+        font-size: 0.95rem;
+      }
+    }
   }
 }
 
 @media (max-width: 768px) {
   .portfolio {
-    .projects {
-      grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
-      gap: 0.5rem;
-    }
-
     .radioDisplay {
       padding: 0.8rem 1rem;
       gap: 0.8rem;
@@ -290,25 +195,33 @@
         font-size: 0.95rem;
       }
     }
-  }
 
-  .showInfos .infosContent {
-    padding: 1.2rem;
-    max-width: 95%;
+    .projects {
+      grid-template-columns: repeat(4, 1fr);
 
-    .head {
-      h2 {
-        font-size: 1.3rem;
+      .project {
+        padding: 0.7rem;
+        aspect-ratio: 1 / 1.2;
+
+        h3 {
+          font-size: 0.95rem;
+          margin-bottom: 0.5rem;
+        }
+
+        img {
+          max-height: 100px;
+          margin-bottom: 0.5rem;
+        }
+
+        .viewButton {
+          padding: 0.5rem 0.8rem;
+          font-size: 0.85rem;
+        }
+
+        .icons i {
+          font-size: 0.9rem;
+        }
       }
-    }
-
-    .text {
-      font-size: 0.9rem;
-    }
-
-    .return {
-      padding: 0.7rem 1.2rem;
-      font-size: 0.9rem;
     }
   }
 }
@@ -322,70 +235,42 @@
       li {
         width: 100%;
         padding: 0.5rem;
+        font-size: 1rem;
       }
     }
 
     .projects {
-      grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
-      gap: 0.4rem;
-      padding: 1rem 0;
+      grid-template-columns: 1fr;
+      gap: 0;
 
       .project {
-        padding: 0.3rem;
+        padding: 1rem;
+        aspect-ratio: auto;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+
+        &:hover {
+          transform: scale(1.01);
+        }
 
         h3 {
-          font-size: 0.9rem;
-          margin-bottom: 0.3rem;
+          font-size: 1.1rem;
+          margin-bottom: 0.8rem;
         }
 
         img {
-          height: 90px;
+          max-height: 200px;
+          margin-bottom: 1rem;
+          width: 100%;
+        }
+
+        .viewButton {
+          padding: 0.8rem 1.5rem;
+          font-size: 1rem;
         }
 
         .icons i {
-          font-size: 0.9rem;
+          font-size: 1rem;
         }
-      }
-    }
-  }
-
-  .showInfos {
-    padding: 0.5rem;
-
-    .infosContent {
-      width: 100%;
-      max-width: 100%;
-      padding: 1rem;
-      max-height: 85vh;
-
-      .head {
-        flex-direction: column;
-        text-align: center;
-
-        h2 {
-          font-size: 1.2rem;
-          margin-bottom: 0.5rem;
-        }
-      }
-
-      .sourceCode {
-        justify-content: center;
-
-        .button {
-          padding: 0.5rem 1rem;
-          font-size: 0.85rem;
-        }
-      }
-
-      .text {
-        font-size: 0.85rem;
-        margin: 0.8rem 0;
-      }
-
-      .return {
-        padding: 0.6rem 1rem;
-        font-size: 0.85rem;
-        margin-top: 0.8rem;
       }
     }
   }
