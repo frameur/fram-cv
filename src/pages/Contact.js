@@ -1,11 +1,11 @@
 import React from 'react'
-import Navigation from '../components/Navigation3'
+import Navigation from '../components/Navigation'
 import { CopyToClipboard } from 'react-copy-to-clipboard'
 
 const Contact = () => {
   return (
     <div className="contact">
-      <Navigation />
+      <Navigation profileImage="./media/tetefrancois.jpg" />
 
       <div className="contactContent">
         <div className="header"></div>

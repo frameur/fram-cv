@@ -1,12 +1,12 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 
-const Navigation = () => {
+const Navigation = ({ profileImage = "./media/francois2.jpg" }) => {
   return (
     <div className="sidebar">
       <div className="id">
         <div className="idContent">
-          <img src="./media/francois2.jpg" alt="profil-pic" />
+          <img src={profileImage} alt="profil-pic" />
           <h3>François RAMOS</h3>
         </div>
       </div>
